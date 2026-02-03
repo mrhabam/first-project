@@ -1,14 +1,14 @@
 <?php
-session_start();c
+session_start();
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-$koneksi =mysqli_connect("localhost","root","", "perpus");
+$koneksi =mysqli_connect("localhost", "root", "", "eperpus");
 
 // chek connection
-if (mysql_connect_error()) {
+if (mysqli_connect_error()) {
     echo "Falied to connect to MYSQL:". mysqli_connect_error();
 }
 ?>
